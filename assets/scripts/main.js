@@ -8,12 +8,17 @@ document.addEventListener('DOMContentLoaded', function() {
     open.addEventListener('click', function() {
 
         document.getElementById('side-navigation').style.width = '100%';
-        document.getElementById('side-navigation').style.overflow = 'hidden';
+        
+        //prevent scrolling when side navigation is open
+        document.body.style.overflow = 'hidden';
     });
 
     //close side navigation
     close.addEventListener('click', function() {
         document.getElementById('side-navigation').style.width = '0';
+        
+        //activate scroll when side nav is closed
+        document.body.style.overflow = 'unset';
     });
 
     //close side navigation when a link is clicked
