@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     open.addEventListener('click', function() {
 
         document.getElementById('side-navigation').style.width = '100%';
+        document.getElementById('side-navigation').style.overflow = 'hidden';
     });
 
     //close side navigation
