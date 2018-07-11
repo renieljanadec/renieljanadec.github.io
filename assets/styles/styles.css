@@ -69,7 +69,6 @@ body
     list-style-type: none;
     transition: .5s;
     padding: 112px 0;
-    overflow: hidden;
 }
 
 .sidenav .nav-link
