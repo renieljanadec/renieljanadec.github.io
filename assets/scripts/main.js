@@ -2,7 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var open = document.getElementById('burger-btn');
     var close = document.getElementById('close-btn');
-
+    
+    
+    //prevent scroll when side nav is open
+    document.body.style.overflow = 'hidden';
+    
     //toggle side navigation
     open.addEventListener('click', function() {
 
