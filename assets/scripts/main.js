@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     
     //prevent scroll when side nav is open
-    document.body.style.overflow = 'hidden';
+    //document.body.style.overflow = 'hidden';
     
     //toggle side navigation
     open.addEventListener('click', function() {
