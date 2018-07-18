@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //toggle side navigation
     open.addEventListener('click', function() {
 
-        document.getElementById('side-navigation').style.width = '100%';
+        document.getElementById('side-navigation').style.width = '300px';
         
         //prevent scrolling when side navigation is open
         document.body.style.overflow = 'hidden';
