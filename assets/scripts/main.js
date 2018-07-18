@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('side-navigation').style.width = '300px';
         
         //prevent scrolling when side navigation is open
-        document.body.style.overflow = 'hidden';
+        //document.body.style.overflow = 'hidden';
     });
 
     //close side navigation
