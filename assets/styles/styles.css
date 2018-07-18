@@ -1,15 +1,3 @@
-/*@font-face
-{
-    font-family: 'Lato';
-    src: url('../font/Lato/Lato-Regular.ttf');
-}
-@font-face
-{
-    font-family: 'Lato-Light';
-    src: url('../font/Lato/Lato-Light.ttf');
-}*/
-
-
 html
 {
     position: relative;
@@ -20,6 +8,7 @@ html
 body
 {
     font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(90, 90, 90);
 }
 
 /* NAVBAR */
@@ -28,20 +17,32 @@ body
     padding: 22px 10px;
     background: #fff;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     width: 100%;
     z-index: 1030;
 }
 
+#default-navbar .navbar-brand
+{
+    color: rgb(87, 87, 87);
+}
+
+#default-navbar .nav-divider
+{
+    background-color: rgba(255, 255, 255, 0.26);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 #burger-btn
 {
-    border: none;
+    border: 1px solid rgb(24, 207, 168);
     background-color: transparent;
-    font-size: 15px;
     outline: none;
     cursor: pointer;
+    color: rgb(24, 207, 168);
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-weight: 100;
 }
 
 
@@ -49,23 +50,23 @@ body
 {
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 27px;
-    left: 27px;
+    top: 15px;
+    left: 10px;
     cursor: pointer;
     font-weight: 300;
 }
 
 .sidenav
 {
-    background: #000;
+    /*background: linear-gradient(45deg, rgb(24, 207, 168) 0,rgb(23, 219, 177) 100%);*/
+    background-color: rgb(21, 21, 21);
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
-    height: 100vh; /* from 100% */
+    height: 100%;
     width: 0;
     z-index: 2000;
-
     list-style-type: none;
     transition: .5s;
     padding: 112px 0;
@@ -73,23 +74,22 @@ body
 
 .sidenav .nav-link
 {
-    text-align: center;
     color: #fff;
-    padding-top: 20px;
-    padding-bottom: 20px; 
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 22px;
+    padding-top: 12px;
+    padding-bottom: 12px; 
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 16px;
     font-weight: 300;
-    letter-spacing: 1px;
-    transition: .4s;
+    transition: .5s;
 }
 
 .sidenav .nav-link:hover
 {
-    letter-spacing: 3px;
+    color: rgb(24, 207, 168);
     transition: .4s;
 }
+
 
 /* SECTIONS */
 .intro
@@ -98,6 +98,7 @@ body
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
+    min-height: 600px;
 }
 
 .headline
@@ -111,14 +112,23 @@ body
     align-items: center;
     margin-top: 50px;
     padding: 100px 15px;
-    background-color: #000;
+    background-color: rgb(21, 21, 21);
     color: #fff !important;
+}
+
+.footer-body
+{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .footer p
 {
     color: #fff;
-    font-size: .80em;
+    font-size: .75em;
 }
 
 
@@ -136,7 +146,7 @@ body
 /* SECTION COLORS */
 .is-lighter
 {
-    background-color: #f7f7f74f;
+    background-color: #f7f7f781;
 }
 
 /* WRAPPER */
@@ -148,12 +158,11 @@ body
     padding-right: 12px;
 }
 
-/* TEXTS */
+/* TEXTS & COLOR */
 .title
 {
     font-size: 47px;
     font-weight: 600;
-    color: rgb(22, 22, 22);
 }
 
 .subtitle
@@ -170,22 +179,28 @@ body
 p
 {
     font-size: 16px;
-    color: rgb(46, 46, 46);
-    line-height: 27px;
+    color: rgb(97, 96, 96);
+    line-height: 29px;
+}
+
+.is-light-green
+{
+    color: rgb(24, 207, 168);
 }
 
 /* BUTTON */
 .btn-cta
 {
-    border: 1px solid #000;
+    border: 1px solid rgb(24, 207, 168);
     padding: 10px 45px;
     cursor: pointer;
+    color: rgb(24, 207, 168) !important;
 }
 
 .btn-cta:hover
 {
     color: #fff !important;
-    background-color: #000;
+    background-color: rgb(24, 207, 168);
     transition: .4s;
 }
 
@@ -224,13 +239,29 @@ img
     margin-top: 15px;
 }
 
-.social-list i
+
+
+/* SOCIAL LINKS */
+.social-list
+{
+    margin-bottom: 10px;
+}
+
+.social-list a
 {
     padding-left: 12px;
     padding-right: 12px;
     padding-bottom: 12px;
     font-size: 18px;
     cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+}
+
+.social-list a:hover
+{
+    color: rgb(24, 207, 168);
+    transition: .5s;
 }
 
 /* MEDIA QUERIES */
@@ -244,8 +275,8 @@ img
 
     .headline
     {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     .title
